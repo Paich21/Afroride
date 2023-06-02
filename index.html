@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+  
+  <?php
+$status = isset($_GET['status']) ? $_GET['status'] : '';
+if ($status == 'success') {
+  echo '<p>Email sent successfully!</p>';
+} elseif ($status == 'error') {
+  echo '<p>Email failed to send. Please try again.</p>';
+}
+?>
+  
 <head>
   <title>Afroridesaver London</title>
   <style>
