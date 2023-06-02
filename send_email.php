@@ -1,4 +1,6 @@
 <?php
+
+echo "hello";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Get the form data
   $pickupLocation = $_POST["pickup-location"];
