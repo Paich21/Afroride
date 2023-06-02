@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $message .= "Phone Number: " . $phoneNumber;
 
   // Send the email
-  $headers = "From: Your Name <your-email@example.com>"; // Replace with your email address
+  $headers = "From: Your Name <paichbley@gmail.com>"; // Replace with your email address
   if (mail($to, $subject, $message, $headers)) {
     // Email sent successfully
     header("Location: index.html?status=success");
